@@ -13,9 +13,10 @@ const Signin = () => {
       .then((userCredential) => {
         const user = userCredential.user;
 
-        // Retrieve the user's nickname from the database (or elsewhere)
-        // You can also use local storage or global state for this
-        // Example: const nickname = getUserNicknameFromDatabase(user.uid);
+        // Retrieve the user's nickname from the database or storage
+        // For this example, we assume you have a function to fetch the nickname
+        // Replace this with your actual code to retrieve the nickname
+        const nickname = getUserNicknameFromDatabase(user.uid);
 
         // Log the user's nickname
         console.log('User signed in with nickname:', nickname);
